@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Data</title>
+</head>
+<body>
+    <h1>Database Data</h1>
+    <ul>
+        <% Object.keys(data).forEach(key => { %>
+            <!-- Access the value corresponding to the current key -->
+            <li><%= key %>: <%= data[key] %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
